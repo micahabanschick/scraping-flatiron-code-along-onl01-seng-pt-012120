@@ -28,7 +28,10 @@ class Scraper
     end
 =end 
   end
-    
+  
+  def get_courses
+    self.get_page.css(".post")
+  end  
   
 end
 
